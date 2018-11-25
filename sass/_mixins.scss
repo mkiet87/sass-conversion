@@ -1,0 +1,6 @@
+@mixin flexstuff($flexB, $flexG, $flexS) {
+    flex-basis: $flexB;
+    flex-grow: $flexG;
+    flex-shrink: $flexS;
+    @content;
+}
