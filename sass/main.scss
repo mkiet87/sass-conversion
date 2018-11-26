@@ -17,12 +17,38 @@ dark grey   $grey2
 
                 DEFAULTS
 ***********************************************/
+*{
+    padding:0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 
+&:after,
+&:before{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+}
+html{
+    font-size: 16px;
+    font-family: $fontSS; /* default for whole page */
+    line-height: 1.6;
+    font-weight: 400;
+}
+h1, h2, h3, h4{
+    font-weight: 700;
+    font-family: $fontS; /* serif for the headings */
+}
+ul{
+    list-style: none;
+}
 
 /***********************************************
                 SPECIAL
 ***********************************************/
-
+.posRel{
+    position: relative;
+}
 
 
 /***********************************************
@@ -34,11 +60,11 @@ dark grey   $grey2
     color: $grey2;
     border-bottom:1rem solid $blue2;
     border-top:1rem solid $blue3;
-    position: relative;
+    @extend .posRel;
 
 &:before,
 &:after{
-    ;
+    content:"";
     position:absolute;
     bottom:-1rem;
     height:1rem;
@@ -73,7 +99,7 @@ dark grey   $grey2
 header{
     width: 400px; /* default min screen width */
     margin: 0 auto;
-    position: relative;
+    @extend .posRel;
 }
 header h1{
     width: 100%;
@@ -100,7 +126,7 @@ section.content1{
     padding: 2rem 0;
 }
 section.content2{
-    @extend .content1;   
+   padding:2rem 0;  
 }
 .row{
     display: flex;
