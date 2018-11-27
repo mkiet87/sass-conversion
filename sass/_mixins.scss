@@ -4,3 +4,7 @@
     flex-shrink: $flexS;
     @content;
 }
+
+@mixin fontsize($fsize){
+    font-size: $fsize;
+}

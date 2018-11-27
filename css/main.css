@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /***********************************************
                 COLOUR NOTES
 light blue  $blue1
@@ -26,7 +25,7 @@ dark grey   $grey2
 
 html {
   font-size: 16px;
-  font-family: "Josefin Sans", ‘Trebuchet MS’, Helvetica, sans-serif;
+  font-family: "Josefin Sans", "Trebuchet MS", Helvetica, sans-serif;
   /* default for whole page */
   line-height: 1.6;
   font-weight: 400;
@@ -34,7 +33,7 @@ html {
 
 h1, h2, h3, h4 {
   font-weight: 700;
-  font-family: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  font-family: Cardo, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   /* serif for the headings */
 }
 
@@ -358,12 +357,11 @@ footer h4[lang=ru] {
     margin: 0 auto;
     min-height: 8rem;
   }
-
-  header h1 {
+  header header h1 {
     width: 100%;
     color: #7C593C;
   }
-  header h1:before, header h1:after {
+  header header h1:before, header header h1:after {
     width: 230px;
   }
 

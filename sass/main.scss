@@ -30,7 +30,7 @@ dark grey   $grey2
     }
 }
 html{
-    font-size: 16px;
+    @include fontsize(16px);
     font-family: $fontSS; /* default for whole page */
     line-height: 1.6;
     font-weight: 400;
@@ -169,7 +169,7 @@ header nav > a{
     text-align: center;
     text-decoration: none;
     color: $grey2;    
-    font-size: 1.414rem;
+    @include fontsize(1.414rem);
     letter-spacing: 0.25rem;
     border:1px solid $grey1; 
     border-bottom: none;
@@ -193,14 +193,14 @@ header h1 i.fa-lg{
     display:block;
     width: 25%;
     float:left;
-    font-size: 7rem;
+    @include fontsize(7rem);
     line-height: 12.7936rem;
     color: $brown1;
 }
 header h1 i.fa-lg ~ span{
     float: right;
     width: 75%;
-    font-size: 3.998rem;
+    @include fontsize(3.998rem);
     /**
     2 lines of 3.998 * 1.6 = 12.7936
     **/
@@ -209,17 +209,17 @@ header h1 i.fa-lg ~ span{
 }
 
 .focal h2{
-    font-size: 1.999rem;
+    @include fontsize(1.999rem);
     line-height: 1.2;
     padding: 2rem 2rem 1rem 2rem;
 }
 .focal .author{
-    font-size: 1rem;
+    @include fontsize(1rem);
     padding: 0.2rem 2rem 2rem;
 }
 
 .content1 h3{
-    font-size:1.999rem;
+    @include fontsize(1.999rem);
     padding: 0.2rem 2rem 2rem;
 }
 .content1 h3 i{
@@ -227,25 +227,25 @@ header h1 i.fa-lg ~ span{
     padding-right: 2rem;
 }
 .content1 p{
-    font-size: 1.414rem;
+    @include fontsize(1.414rem);
     padding: 0.5rem 2rem 2rem;
 }
 
 .content2 h3{
-    font-size: 1.999rem;
+    @include fontsize(1.999rem);
     padding: 1rem 2rem 0.5rem;
 }
 .content2 h4{
-    font-size: 1.999rem;
+    @include fontsize(1.999rem);
     padding: 1rem 2rem 0rem;
 }
 .content2 p{
-    font-size: 1.414rem;
+    @include fontsize(1.414rem);
     padding: 0.5rem 2rem 1rem;
 }
 .content2 li{
     padding: 0.5rem 2rem;
-    font-size: 1.414rem;
+    @include fontsize(1.414rem);
 }
 
 .content2 span[lang]{
@@ -258,7 +258,7 @@ header h1 i.fa-lg ~ span{
     content: attr(data-country);
     display: block;
     padding: 0.2rem 1rem 0.2rem 2rem;
-    font-size: 1rem;
+    @include fontsize(1rem);
     line-height: 2rem;
     height: 2rem;
     width: auto;
@@ -293,12 +293,12 @@ header h1 i.fa-lg ~ span{
                 FOOTER
 ***********************************************/
 footer h4{
-    font-size: 1.414rem;
+    @include fontsize(1.414rem);
     padding: 0.5rem 2rem;
     color: $brown2;
 }
 footer p{
-    font-size: 1rem;
+    @include fontsize(1rem);
     padding: 0.5rem 2rem;
     color: $grey2;
 }
@@ -323,7 +323,7 @@ footer h4[lang=ru]{
         width: 700px;
         margin: 0 auto;
         min-height: 8rem;
-    }
+    
     header h1{
         width: 100%;
         color: $brown2;
@@ -331,7 +331,7 @@ footer h4[lang=ru]{
     &:before,
     &:after{
         width:230px;
-	;
+    }
     }
     }
     header h1 i.fa-lg{
@@ -339,13 +339,13 @@ footer h4[lang=ru]{
         color: $brown2;
         vertical-align:baseline;
         float:none;
-        font-size: 4rem;
+        @include fontsize(4rem);
         line-height: 6.3968rem;
     }
     header h1 i.fa-lg ~ span{
         float: none;
         letter-spacing: 0.25rem;
-        font-size: 3.998rem;
+        @include fontsize(3.998rem);
         /**
         1 lines of 3.998 * 1.6 = 6.3968
         **/
@@ -359,7 +359,7 @@ footer h4[lang=ru]{
     }
     header nav > a{
         flex-basis: 20%;
-        font-size: 1rem;
+        @include fontsize(1rem);
         line-height: 2rem;
         min-height: 6rem;
         border:none;
@@ -402,10 +402,10 @@ footer h4[lang=ru]{
         flex-basis: 100%;
     }
     section.content2 h4{
-        font-size: 1.414rem;
+        @include fontsize(1.414rem);
     }
     section.content2 li{
-        font-size: 1.414rem;
+        @include fontsize(1.414rem);
     }
     footer .fa-circle{
         color: $blue2;
@@ -445,13 +445,13 @@ footer h4[lang=ru]{
         color: $blue3;
         vertical-align:baseline;
         float:none;
-        font-size: 4rem;
+        @include fontsize(4rem);
         line-height: 6.3968rem;
     }
     header h1 i.fa-lg ~ span{
         float: none;
         letter-spacing: 0.25rem;
-        font-size: 3.998rem;
+        @include fontsize(3.998rem);
         /**
         1 lines of 3.998 * 1.6 = 6.3968
         **/
@@ -465,7 +465,7 @@ footer h4[lang=ru]{
     }
     header nav > a{
         flex-basis: 20%;
-        font-size: 1rem;
+        @include fontsize(1rem);
         line-height: 2rem;
         min-height: 2rem;
         border:none;
@@ -516,22 +516,22 @@ footer h4[lang=ru]{
         flex-basis: 100%;
     }
     section.content1 h3{
-        font-size: 1.999rem;
+        @include fontsize(1.999rem);
         font-weight: 100;
     }
     section.content1 h3 .fa-2x{
-        font-size: 1.999rem;
+        @include fontsize(1.999rem);
         padding-right: 1rem;
     }
     
     section.content2 h4{
-        font-size: 1.414rem;
+        @include fontsize(1.414rem);
     }
     section.content2 li{
-        font-size: 1.414rem;
+        @include fontsize(1.414rem);
     }
     section.content2 p{
-        font-size: 1rem;
+        @include fontsize(1rem);
         font-weight: 400;
     }
     footer .fa-circle{
@@ -567,13 +567,13 @@ footer h4[lang=ru]{
         color: $brown2;
         vertical-align:baseline;
         float:none;
-        font-size: 4rem;
+        @include fontsize(4rem);
         line-height: 6.3968rem;
     }
     header h1 i.fa-lg ~ span{
         float: none;
         letter-spacing: 0.25rem;
-        font-size: 3.998rem;
+        @include fontsize(3.998rem);
         /**
         1 lines of 3.998 * 1.6 = 6.3968
         **/
@@ -590,7 +590,7 @@ footer h4[lang=ru]{
     }
     header nav > a{
         flex-basis: 20%;
-        font-size: 1.414rem;
+        @include fontsize(1.414rem);
         line-height: 2rem;
         min-height: 2rem;
         border:none;
@@ -634,7 +634,7 @@ footer h4[lang=ru]{
     }
     
     section.focal h2{
-        font-size: 3.998rem;
+        @include fontsize(3.998rem);
         width: 600px; 
         margin: 0 auto;
     }
@@ -644,26 +644,26 @@ footer h4[lang=ru]{
     }
     
     section.content1 h3{
-        font-size: 2.827rem;
+        @include fontsize(2.827rem);
         font-weight: 100;
     }
     section.content1 h3 .fa-2x{
-        font-size: 2.827rem;
+        @include fontsize(2.827rem);
         padding-right: 1rem;
         vertical-align: middle;
     }
     
     section.content2 h4{
-        font-size: 1.999rem;
+        @include fontsize(1.999rem);
     }
     section.content2 li{
-        font-size: 1.999rem;
+        @include fontsize(1.999rem);
     }
     section.content2 p{
-        font-size: 1.414rem;
+        @include fontsize(1.414rem);
     }
     footer p{
-        font-size: 1.414rem;
+        @include fontsize(1.414rem);
         letter-spacing: 0.2rem;
     }
     footer p:last-child{
