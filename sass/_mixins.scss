@@ -2,9 +2,27 @@
     flex-basis: $flexB;
     flex-grow: $flexG;
     flex-shrink: $flexS;
-    @content;
 }
 
 @mixin fontsize($fsize){
     font-size: $fsize;
+}
+
+@mixin mediaA{
+    @media all and (min-width:701px) and (max-width:900px) {
+        @content;
+    }
+}
+
+@mixin mediaB{
+    @media all and (min-width:901px) and (max-width: 1400px) {
+        @content;
+    }
+    
+}
+
+@mixin mediaC{
+    @media all and (min-width:1401px) {
+        @content;
+    }
 }
